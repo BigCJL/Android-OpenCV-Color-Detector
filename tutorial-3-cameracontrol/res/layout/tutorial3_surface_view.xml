@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/shoot_btn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="74dp"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:onClick="showMsg"-->
+    <!--        android:text="Change_Color"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:visibility="visible" />-->
+
+    <Button
+        android:id="@+id/ToGray"
+        android:layout_width="76dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="126dp"
+        android:text="Convert"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shoot_btn"
+        app:layout_constraintTop_toBottomOf="@+id/tutorial3_activity_java_surface_view" />
+
+    <org.opencv.samples.tutorial3.Tutorial3View
+        android:id="@+id/tutorial3_activity_java_surface_view"
+        android:layout_width="406dp"
+        android:layout_height="466dp"
+
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="139dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ToGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ChangeColor"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="69dp"
+        android:text="ToGray"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/shoot_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shoot_btn" />
+
+    <Button
+        android:id="@+id/shoot_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center|right"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/shapes"
+        app:layout_constraintEnd_toStartOf="@+id/ToGray"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ChangeColor"
+        app:layout_constraintTop_toTopOf="@+id/ToGray" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
