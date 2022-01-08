@@ -5,3 +5,5 @@
 ## 2021.12.26日
 opencv4.5.2 + JNI + Cpp调用android摄像头，是直接基于opencv官方samples的第三个例子增加了上述功能。
 所有逻辑都用C++编写，java层仅做调用。
+
+![living](https://github.com/BigCJL/Android-OpenCV-Color-Detector/blob/main/demo.gif)
